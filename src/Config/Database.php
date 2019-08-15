@@ -1,5 +1,5 @@
 <?php
-namespace AHT\Config;
+namespace AHT_DT\Config;
 
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
@@ -12,7 +12,7 @@ class Database
 
 	public static function getConn() 
 	{
-		// the connection configuration
+		// Kết nối database
 		$dbParams = array(
 			'driver'   => 'pdo_mysql',
 			'user'     => 'root',

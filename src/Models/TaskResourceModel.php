@@ -1,8 +1,8 @@
 <?php 
-namespace AHT\Models;
+namespace AHT_DT\Models;
 
-use AHT\Models\Tasks;
-use AHT\Bootstrap;
+use AHT_DT\Models\Tasks;
+use AHT_DT\Bootstrap;
 
 class TaskResourceModel
 {
@@ -21,7 +21,7 @@ class TaskResourceModel
 	{
 		$propertiesArray = $this->objModel->getProperties($model);
 		$id = $propertiesArray['id'];
-		$this->objModel = $this->entityManager->find('\AHT\Models\Tasks', $id);
+		$this->objModel = $this->entityManager->find('\AHT_DT\Models\Tasks', $id);
 		foreach ($propertiesArray as $key => $value) {
 			$this->objModel->{'set' . ucfirst($key)}($value);
 		}
@@ -32,20 +32,20 @@ class TaskResourceModel
 	public function delete($id)
 	{
 		
-		$this->objModel = $this->entityManager->find('\AHT\Models\Tasks', $id);
+		$this->objModel = $this->entityManager->find('\AHT_DT\Models\Tasks', $id);
 		$this->entityManager->remove($this->objModel);
 		$this->entityManager->flush();
 	}
 
 	public function get($id)
 	{
-		$value = $this->entityManager->find('\AHT\Models\Tasks', $id);
+		$value = $this->entityManager->find('\AHT_DT\Models\Tasks', $id);
 		return $this->objModel->getProperties($value);
 	}
 
 	public function getAll()
 	{
-		$tasksRepository = $this->entityManager->getRepository('\AHT\Models\Tasks');
+		$tasksRepository = $this->entityManager->getRepository('\AHT_DT\Models\Tasks');
 		$tasks = $tasksRepository->findAll();
 		$value = [];
 		foreach ($tasks as $task) {

@@ -1,5 +1,5 @@
 <?php
-namespace AHT\Models;
+namespace AHT_DT\Models;
 
 /**
 * @Entity @Table(name="tasks")

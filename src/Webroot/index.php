@@ -1,7 +1,7 @@
 <?php
-namespace AHT\Webroot;
+namespace AHT_DT\Webroot;
 
-use AHT\Dispatcher;
+use AHT_DT\Dispatcher;
 
 require_once  '../../vendor/autoload.php';
 

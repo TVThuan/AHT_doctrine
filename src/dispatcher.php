@@ -1,5 +1,5 @@
 <?php
-namespace AHT;
+namespace AHT_DT;
 
 class Dispatcher
 {
@@ -19,7 +19,7 @@ class Dispatcher
 
     public function loadController()
     {
-        $name = 'AHT\\Controllers\\' . ucfirst($this->request->controller) . "Controller";
+        $name = 'AHT_DT\\Controllers\\' . ucfirst($this->request->controller) . "Controller";
         // $file = ROOT . 'Controllers/' . $name . '.php';
         // require($file);
         $controller = new $name();

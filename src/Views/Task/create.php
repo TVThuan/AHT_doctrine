@@ -1,5 +1,5 @@
 <h1>Create task</h1>
-<form method='POST' action='/AHT_ORM/MVC/ex1/src/Webroot/task/create'>
+<form method='POST' action='/AHT_doctrine/MVC/doctrine/src/Webroot/task/create'>
     <div class="form-group">
         <label for="title">Title</label>
         <input type="text" class="form-control" id="title" placeholder="Enter a title" name="title">

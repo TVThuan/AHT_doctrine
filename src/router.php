@@ -1,6 +1,6 @@
 <?php
 
-namespace AHT;
+namespace AHT_DT;
 
 class Router
 {
@@ -9,7 +9,7 @@ class Router
     {
         $url = trim($url);
 
-        if ($url == "/AHT_ORM/MVC/ex1/src/Webroot/")
+        if ($url == "/AHT_doctrine/MVC/doctrine/src/Webroot/")
         {
             $request->controller = "task";
             $request->action = "index";

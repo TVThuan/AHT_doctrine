@@ -1,5 +1,5 @@
 <?php
-namespace AHT;
+namespace AHT_DT;
 // bootstrap.php
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;

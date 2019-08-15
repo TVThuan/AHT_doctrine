@@ -1,5 +1,5 @@
 <?php
-namespace AHT\Core;
+namespace AHT_DT\Core;
 
     class Controller
     {
@@ -47,10 +47,6 @@ namespace AHT\Core;
             }
         }
 
-        // protected function convertToString($str)
-        // {
-        //     $str = "'" . $str . "'";
-        //     return $str;
-        // }
+        
     }
 ?>
