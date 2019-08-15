@@ -1,1 +1,1 @@
-// Tích hợp Doctrine vào mô hình MVC ORM
+// Tích hợp Doctrine2
