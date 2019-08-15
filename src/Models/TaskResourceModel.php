@@ -25,15 +25,15 @@ class TaskResourceModel
 		foreach ($propertiesArray as $key => $value) {
 			$this->objModel->{'set' . ucfirst($key)}($value);
 		}
-		$this->entityManager->persist($this->objModel);
-		$this->entityManager->flush();
+		$this->entityManager->persist($this->objModel); //persist được dùng để thêm một bản ghi vào database
+		$this->entityManager->flush(); // Trả về
 	}
 
 	public function delete($id)
 	{
 		
-		$this->objModel = $this->entityManager->find('\AHT_DT\Models\Tasks', $id);
-		$this->entityManager->remove($this->objModel);
+		$this->objModel = $this->entityManager->find('\AHT_DT\Models\Tasks', $id); // Tìm thành phần id 
+		$this->entityManager->remove($this->objModel); // Xóa phần tử được xác định
 		$this->entityManager->flush();
 	}
 

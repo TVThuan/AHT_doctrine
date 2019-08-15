@@ -17,16 +17,16 @@ class Tasks
     /** @Column(type="datetime") */
     protected $updated_at;
 
-    public function getId()
-    {
-        return $this->id;
-    }
-
     public function setId($id)
     {
         $this->id = $id;
     }
 
+    public function getId()
+    {
+        return $this->id;
+    }
+    
     public function setTitle($title)
     {
         $this->title = $title;
